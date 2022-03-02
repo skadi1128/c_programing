@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+
+    printf("What is the length? ");
+    double length;
+    scanf("%1f", &length);
+
+    double area = length * length;
+    printf("The area is, %1f|\n", area);
+
+    return 0;
