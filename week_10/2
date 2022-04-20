@@ -1,0 +1,22 @@
+// ASK USER WHERE TO PUT X
+char player;
+if (turn % 2 == 0) {
+    player = '0';
+} else {
+    player = 'X';
+}
+printf("Where does %c want to go? ", player);
+
+int column;
+int row;
+scanf("%i %i, &cloumn,&row");
+printf("column: %d, row: %d\n", column, row);
+
+// put the x in the board
+board [row - 1] [column - 1] = player;
+
+//print board again with the x
+printBoard(board);
+
+turn++;
+}
